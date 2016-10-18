@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+    <title>Jefferson Wheel</title>
+    <link rel="stylesheet" href="css/icheck.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="header">Jefferson Wheel Cipher</h1>
+    <div class="arrow">&uarr;</div>
+    <div class="arrow">&darr;</div>
+    <div class="wheels">
+        <div class="wrapper">
+            <div class="select-btn">
+                <input type="radio" name="select-wheel" checked>
+                <input type="hidden" name="order" value="0">
+            </div>
+            <div class="wheel">
+                <div class="tiles">
+                    <div class="tile" data-number="6">- G -</div>
+                    <div class="tile" data-number="1">- B -</div>
+                    <div class="tile" data-number="2">- C -</div>
+                    <div class="tile" data-number="4">- E -</div>
+                    <div class="tile" data-number="3">- D -</div>
+                    <div class="tile" data-number="9">- J -</div>
+                    <div class="tile" data-number="12">- M -</div>
+                    <div class="tile" data-number="17">- R -</div>
+                    <div class="tile" data-number="0">- A -</div>
+                    <div class="tile" data-number="11">- L -</div>
+                    <div class="tile" data-number="15">- P -</div>
+                    <div class="tile" data-number="7">- H -</div>
+                    <div class="tile" data-number="13">- N -</div>
+                    <div class="tile" data-number="19">- T -</div>
+                    <div class="tile" data-number="5">- F -</div>
+                    <div class="tile" data-number="23">- X -</div>
+                    <div class="tile" data-number="18">- S -</div>
+                    <div class="tile" data-number="8">- I -</div>
+                    <div class="tile" data-number="20">- U -</div>
+                    <div class="tile" data-number="10">- K -</div>
+                    <div class="tile" data-number="14">- O -</div>
+                    <div class="tile" data-number="16">- Q -</div>
+                    <div class="tile" data-number="21">- V -</div>
+                    <div class="tile" data-number="25">- Z -</div>    
+                    <div class="tile" data-number="22">- W -</div>
+                    <div class="tile" data-number="24">- Y -</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="select-btn">
+                <input type="radio" name="select-wheel" >
+                <input type="hidden" name="order" value="0">
+            </div>
+            <div class="wheel">
+                <div class="tiles">
+                    <div class="tile" data-number="6">- G -</div>
+                    <div class="tile" data-number="1">- B -</div>
+                    <div class="tile" data-number="2">- C -</div>
+                    <div class="tile" data-number="4">- E -</div>
+                    <div class="tile" data-number="3">- D -</div>
+                    <div class="tile" data-number="9">- J -</div>
+                    <div class="tile" data-number="12">- M -</div>
+                    <div class="tile" data-number="17">- R -</div>
+                    <div class="tile" data-number="0">- A -</div>
+                    <div class="tile" data-number="11">- L -</div>
+                    <div class="tile" data-number="15">- P -</div>
+                    <div class="tile" data-number="7">- H -</div>
+                    <div class="tile" data-number="13">- N -</div>
+                    <div class="tile" data-number="19">- T -</div>
+                    <div class="tile" data-number="5">- F -</div>
+                    <div class="tile" data-number="23">- X -</div>
+                    <div class="tile" data-number="18">- S -</div>
+                    <div class="tile" data-number="8">- I -</div>
+                    <div class="tile" data-number="20">- U -</div>
+                    <div class="tile" data-number="10">- K -</div>
+                    <div class="tile" data-number="14">- O -</div>
+                    <div class="tile" data-number="16">- Q -</div>
+                    <div class="tile" data-number="21">- V -</div>
+                    <div class="tile" data-number="25">- Z -</div>    
+                    <div class="tile" data-number="22">- W -</div>
+                    <div class="tile" data-number="24">- Y -</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="select-btn">
+                <input type="radio" name="select-wheel" >
+                <input type="hidden" name="order" value="0">
+            </div>
+            <div class="wheel">
+                <div class="tiles">
+                    <div class="tile" data-number="6">- G -</div>
+                    <div class="tile" data-number="1">- B -</div>
+                    <div class="tile" data-number="2">- C -</div>
+                    <div class="tile" data-number="4">- E -</div>
+                    <div class="tile" data-number="3">- D -</div>
+                    <div class="tile" data-number="9">- J -</div>
+                    <div class="tile" data-number="12">- M -</div>
+                    <div class="tile" data-number="17">- R -</div>
+                    <div class="tile" data-number="0">- A -</div>
+                    <div class="tile" data-number="11">- L -</div>
+                    <div class="tile" data-number="15">- P -</div>
+                    <div class="tile" data-number="7">- H -</div>
+                    <div class="tile" data-number="13">- N -</div>
+                    <div class="tile" data-number="19">- T -</div>
+                    <div class="tile" data-number="5">- F -</div>
+                    <div class="tile" data-number="23">- X -</div>
+                    <div class="tile" data-number="18">- S -</div>
+                    <div class="tile" data-number="8">- I -</div>
+                    <div class="tile" data-number="20">- U -</div>
+                    <div class="tile" data-number="10">- K -</div>
+                    <div class="tile" data-number="14">- O -</div>
+                    <div class="tile" data-number="16">- Q -</div>
+                    <div class="tile" data-number="21">- V -</div>
+                    <div class="tile" data-number="25">- Z -</div>    
+                    <div class="tile" data-number="22">- W -</div>
+                    <div class="tile" data-number="24">- Y -</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="select-btn">
+                <input type="radio" name="select-wheel" >
+                <input type="hidden" name="order" value="0">
+            </div>
+            <div class="wheel">
+                <div class="tiles">
+                    <div class="tile" data-number="6">- G -</div>
+                    <div class="tile" data-number="1">- B -</div>
+                    <div class="tile" data-number="2">- C -</div>
+                    <div class="tile" data-number="4">- E -</div>
+                    <div class="tile" data-number="3">- D -</div>
+                    <div class="tile" data-number="9">- J -</div>
+                    <div class="tile" data-number="12">- M -</div>
+                    <div class="tile" data-number="17">- R -</div>
+                    <div class="tile" data-number="0">- A -</div>
+                    <div class="tile" data-number="11">- L -</div>
+                    <div class="tile" data-number="15">- P -</div>
+                    <div class="tile" data-number="7">- H -</div>
+                    <div class="tile" data-number="13">- N -</div>
+                    <div class="tile" data-number="19">- T -</div>
+                    <div class="tile" data-number="5">- F -</div>
+                    <div class="tile" data-number="23">- X -</div>
+                    <div class="tile" data-number="18">- S -</div>
+                    <div class="tile" data-number="8">- I -</div>
+                    <div class="tile" data-number="20">- U -</div>
+                    <div class="tile" data-number="10">- K -</div>
+                    <div class="tile" data-number="14">- O -</div>
+                    <div class="tile" data-number="16">- Q -</div>
+                    <div class="tile" data-number="21">- V -</div>
+                    <div class="tile" data-number="25">- Z -</div>    
+                    <div class="tile" data-number="22">- W -</div>
+                    <div class="tile" data-number="24">- Y -</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="select-btn">
+                <input type="radio" name="select-wheel" >
+                <input type="hidden" name="order" value="0">
+            </div>
+            <div class="wheel">
+                <div class="tiles">
+                    <div class="tile" data-number="6">- G -</div>
+                    <div class="tile" data-number="1">- B -</div>
+                    <div class="tile" data-number="2">- C -</div>
+                    <div class="tile" data-number="4">- E -</div>
+                    <div class="tile" data-number="3">- D -</div>
+                    <div class="tile" data-number="9">- J -</div>
+                    <div class="tile" data-number="12">- M -</div>
+                    <div class="tile" data-number="17">- R -</div>
+                    <div class="tile" data-number="0">- A -</div>
+                    <div class="tile" data-number="11">- L -</div>
+                    <div class="tile" data-number="15">- P -</div>
+                    <div class="tile" data-number="7">- H -</div>
+                    <div class="tile" data-number="13">- N -</div>
+                    <div class="tile" data-number="19">- T -</div>
+                    <div class="tile" data-number="5">- F -</div>
+                    <div class="tile" data-number="23">- X -</div>
+                    <div class="tile" data-number="18">- S -</div>
+                    <div class="tile" data-number="8">- I -</div>
+                    <div class="tile" data-number="20">- U -</div>
+                    <div class="tile" data-number="10">- K -</div>
+                    <div class="tile" data-number="14">- O -</div>
+                    <div class="tile" data-number="16">- Q -</div>
+                    <div class="tile" data-number="21">- V -</div>
+                    <div class="tile" data-number="25">- Z -</div>    
+                    <div class="tile" data-number="22">- W -</div>
+                    <div class="tile" data-number="24">- Y -</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="select-btn">
+                <input type="radio" name="select-wheel" >
+                <input type="hidden" name="order" value="0">
+            </div>
+            <div class="wheel">
+                <div class="tiles">
+                    <div class="tile" data-number="6">- G -</div>
+                    <div class="tile" data-number="1">- B -</div>
+                    <div class="tile" data-number="2">- C -</div>
+                    <div class="tile" data-number="4">- E -</div>
+                    <div class="tile" data-number="3">- D -</div>
+                    <div class="tile" data-number="9">- J -</div>
+                    <div class="tile" data-number="12">- M -</div>
+                    <div class="tile" data-number="17">- R -</div>
+                    <div class="tile" data-number="0">- A -</div>
+                    <div class="tile" data-number="11">- L -</div>
+                    <div class="tile" data-number="15">- P -</div>
+                    <div class="tile" data-number="7">- H -</div>
+                    <div class="tile" data-number="13">- N -</div>
+                    <div class="tile" data-number="19">- T -</div>
+                    <div class="tile" data-number="5">- F -</div>
+                    <div class="tile" data-number="23">- X -</div>
+                    <div class="tile" data-number="18">- S -</div>
+                    <div class="tile" data-number="8">- I -</div>
+                    <div class="tile" data-number="20">- U -</div>
+                    <div class="tile" data-number="10">- K -</div>
+                    <div class="tile" data-number="14">- O -</div>
+                    <div class="tile" data-number="16">- Q -</div>
+                    <div class="tile" data-number="21">- V -</div>
+                    <div class="tile" data-number="25">- Z -</div>    
+                    <div class="tile" data-number="22">- W -</div>
+                    <div class="tile" data-number="24">- Y -</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="select-btn">
+                <input type="radio" name="select-wheel" >
+                <input type="hidden" name="order" value="0">
+            </div>
+            <div class="wheel">
+                <div class="tiles">
+                    <div class="tile" data-number="6">- G -</div>
+                    <div class="tile" data-number="1">- B -</div>
+                    <div class="tile" data-number="2">- C -</div>
+                    <div class="tile" data-number="4">- E -</div>
+                    <div class="tile" data-number="3">- D -</div>
+                    <div class="tile" data-number="9">- J -</div>
+                    <div class="tile" data-number="12">- M -</div>
+                    <div class="tile" data-number="17">- R -</div>
+                    <div class="tile" data-number="0">- A -</div>
+                    <div class="tile" data-number="11">- L -</div>
+                    <div class="tile" data-number="15">- P -</div>
+                    <div class="tile" data-number="7">- H -</div>
+                    <div class="tile" data-number="13">- N -</div>
+                    <div class="tile" data-number="19">- T -</div>
+                    <div class="tile" data-number="5">- F -</div>
+                    <div class="tile" data-number="23">- X -</div>
+                    <div class="tile" data-number="18">- S -</div>
+                    <div class="tile" data-number="8">- I -</div>
+                    <div class="tile" data-number="20">- U -</div>
+                    <div class="tile" data-number="10">- K -</div>
+                    <div class="tile" data-number="14">- O -</div>
+                    <div class="tile" data-number="16">- Q -</div>
+                    <div class="tile" data-number="21">- V -</div>
+                    <div class="tile" data-number="25">- Z -</div>    
+                    <div class="tile" data-number="22">- W -</div>
+                    <div class="tile" data-number="24">- Y -</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="select-btn">
+                <input type="radio" name="select-wheel" >
+                <input type="hidden" name="order" value="0">
+            </div>
+            <div class="wheel">
+                <div class="tiles">
+                    <div class="tile" data-number="6">- G -</div>
+                    <div class="tile" data-number="1">- B -</div>
+                    <div class="tile" data-number="2">- C -</div>
+                    <div class="tile" data-number="4">- E -</div>
+                    <div class="tile" data-number="3">- D -</div>
+                    <div class="tile" data-number="9">- J -</div>
+                    <div class="tile" data-number="12">- M -</div>
+                    <div class="tile" data-number="17">- R -</div>
+                    <div class="tile" data-number="0">- A -</div>
+                    <div class="tile" data-number="11">- L -</div>
+                    <div class="tile" data-number="15">- P -</div>
+                    <div class="tile" data-number="7">- H -</div>
+                    <div class="tile" data-number="13">- N -</div>
+                    <div class="tile" data-number="19">- T -</div>
+                    <div class="tile" data-number="5">- F -</div>
+                    <div class="tile" data-number="23">- X -</div>
+                    <div class="tile" data-number="18">- S -</div>
+                    <div class="tile" data-number="8">- I -</div>
+                    <div class="tile" data-number="20">- U -</div>
+                    <div class="tile" data-number="10">- K -</div>
+                    <div class="tile" data-number="14">- O -</div>
+                    <div class="tile" data-number="16">- Q -</div>
+                    <div class="tile" data-number="21">- V -</div>
+                    <div class="tile" data-number="25">- Z -</div>    
+                    <div class="tile" data-number="22">- W -</div>
+                    <div class="tile" data-number="24">- Y -</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="select-btn">
+                <input type="radio" name="select-wheel" >
+                <input type="hidden" name="order" value="0">
+            </div>
+            <div class="wheel">
+                <div class="tiles">
+                    <div class="tile" data-number="6">- G -</div>
+                    <div class="tile" data-number="1">- B -</div>
+                    <div class="tile" data-number="2">- C -</div>
+                    <div class="tile" data-number="4">- E -</div>
+                    <div class="tile" data-number="3">- D -</div>
+                    <div class="tile" data-number="9">- J -</div>
+                    <div class="tile" data-number="12">- M -</div>
+                    <div class="tile" data-number="17">- R -</div>
+                    <div class="tile" data-number="0">- A -</div>
+                    <div class="tile" data-number="11">- L -</div>
+                    <div class="tile" data-number="15">- P -</div>
+                    <div class="tile" data-number="7">- H -</div>
+                    <div class="tile" data-number="13">- N -</div>
+                    <div class="tile" data-number="19">- T -</div>
+                    <div class="tile" data-number="5">- F -</div>
+                    <div class="tile" data-number="23">- X -</div>
+                    <div class="tile" data-number="18">- S -</div>
+                    <div class="tile" data-number="8">- I -</div>
+                    <div class="tile" data-number="20">- U -</div>
+                    <div class="tile" data-number="10">- K -</div>
+                    <div class="tile" data-number="14">- O -</div>
+                    <div class="tile" data-number="16">- Q -</div>
+                    <div class="tile" data-number="21">- V -</div>
+                    <div class="tile" data-number="25">- Z -</div>    
+                    <div class="tile" data-number="22">- W -</div>
+                    <div class="tile" data-number="24">- Y -</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="select-btn">
+                <input type="radio" name="select-wheel" >
+                <input type="hidden" name="order" value="0">
+            </div>
+            <div class="wheel">
+                <div class="tiles">
+                    <div class="tile" data-number="6">- G -</div>
+                    <div class="tile" data-number="1">- B -</div>
+                    <div class="tile" data-number="2">- C -</div>
+                    <div class="tile" data-number="4">- E -</div>
+                    <div class="tile" data-number="3">- D -</div>
+                    <div class="tile" data-number="9">- J -</div>
+                    <div class="tile" data-number="12">- M -</div>
+                    <div class="tile" data-number="17">- R -</div>
+                    <div class="tile" data-number="0">- A -</div>
+                    <div class="tile" data-number="11">- L -</div>
+                    <div class="tile" data-number="15">- P -</div>
+                    <div class="tile" data-number="7">- H -</div>
+                    <div class="tile" data-number="13">- N -</div>
+                    <div class="tile" data-number="19">- T -</div>
+                    <div class="tile" data-number="5">- F -</div>
+                    <div class="tile" data-number="23">- X -</div>
+                    <div class="tile" data-number="18">- S -</div>
+                    <div class="tile" data-number="8">- I -</div>
+                    <div class="tile" data-number="20">- U -</div>
+                    <div class="tile" data-number="10">- K -</div>
+                    <div class="tile" data-number="14">- O -</div>
+                    <div class="tile" data-number="16">- Q -</div>
+                    <div class="tile" data-number="21">- V -</div>
+                    <div class="tile" data-number="25">- Z -</div>    
+                    <div class="tile" data-number="22">- W -</div>
+                    <div class="tile" data-number="24">- Y -</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="select-btn">
+                <input type="radio" name="select-wheel" >
+                <input type="hidden" name="order" value="0">
+            </div>
+            <div class="wheel">
+                <div class="tiles">
+                    <div class="tile" data-number="6">- G -</div>
+                    <div class="tile" data-number="1">- B -</div>
+                    <div class="tile" data-number="2">- C -</div>
+                    <div class="tile" data-number="4">- E -</div>
+                    <div class="tile" data-number="3">- D -</div>
+                    <div class="tile" data-number="9">- J -</div>
+                    <div class="tile" data-number="12">- M -</div>
+                    <div class="tile" data-number="17">- R -</div>
+                    <div class="tile" data-number="0">- A -</div>
+                    <div class="tile" data-number="11">- L -</div>
+                    <div class="tile" data-number="15">- P -</div>
+                    <div class="tile" data-number="7">- H -</div>
+                    <div class="tile" data-number="13">- N -</div>
+                    <div class="tile" data-number="19">- T -</div>
+                    <div class="tile" data-number="5">- F -</div>
+                    <div class="tile" data-number="23">- X -</div>
+                    <div class="tile" data-number="18">- S -</div>
+                    <div class="tile" data-number="8">- I -</div>
+                    <div class="tile" data-number="20">- U -</div>
+                    <div class="tile" data-number="10">- K -</div>
+                    <div class="tile" data-number="14">- O -</div>
+                    <div class="tile" data-number="16">- Q -</div>
+                    <div class="tile" data-number="21">- V -</div>
+                    <div class="tile" data-number="25">- Z -</div>    
+                    <div class="tile" data-number="22">- W -</div>
+                    <div class="tile" data-number="24">- Y -</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="select-btn">
+                <input type="radio" name="select-wheel" >
+                <input type="hidden" name="order" value="0">
+            </div>
+            <div class="wheel">
+                <div class="tiles">
+                    <div class="tile" data-number="6">- G -</div>
+                    <div class="tile" data-number="1">- B -</div>
+                    <div class="tile" data-number="2">- C -</div>
+                    <div class="tile" data-number="4">- E -</div>
+                    <div class="tile" data-number="3">- D -</div>
+                    <div class="tile" data-number="9">- J -</div>
+                    <div class="tile" data-number="12">- M -</div>
+                    <div class="tile" data-number="17">- R -</div>
+                    <div class="tile" data-number="0">- A -</div>
+                    <div class="tile" data-number="11">- L -</div>
+                    <div class="tile" data-number="15">- P -</div>
+                    <div class="tile" data-number="7">- H -</div>
+                    <div class="tile" data-number="13">- N -</div>
+                    <div class="tile" data-number="19">- T -</div>
+                    <div class="tile" data-number="5">- F -</div>
+                    <div class="tile" data-number="23">- X -</div>
+                    <div class="tile" data-number="18">- S -</div>
+                    <div class="tile" data-number="8">- I -</div>
+                    <div class="tile" data-number="20">- U -</div>
+                    <div class="tile" data-number="10">- K -</div>
+                    <div class="tile" data-number="14">- O -</div>
+                    <div class="tile" data-number="16">- Q -</div>
+                    <div class="tile" data-number="21">- V -</div>
+                    <div class="tile" data-number="25">- Z -</div>    
+                    <div class="tile" data-number="22">- W -</div>
+                    <div class="tile" data-number="24">- Y -</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="select-btn">
+                <input type="radio" name="select-wheel" >
+                <input type="hidden" name="order" value="0">
+            </div>
+            <div class="wheel">
+                <div class="tiles">
+                    <div class="tile" data-number="6">- G -</div>
+                    <div class="tile" data-number="1">- B -</div>
+                    <div class="tile" data-number="2">- C -</div>
+                    <div class="tile" data-number="4">- E -</div>
+                    <div class="tile" data-number="3">- D -</div>
+                    <div class="tile" data-number="9">- J -</div>
+                    <div class="tile" data-number="12">- M -</div>
+                    <div class="tile" data-number="17">- R -</div>
+                    <div class="tile" data-number="0">- A -</div>
+                    <div class="tile" data-number="11">- L -</div>
+                    <div class="tile" data-number="15">- P -</div>
+                    <div class="tile" data-number="7">- H -</div>
+                    <div class="tile" data-number="13">- N -</div>
+                    <div class="tile" data-number="19">- T -</div>
+                    <div class="tile" data-number="5">- F -</div>
+                    <div class="tile" data-number="23">- X -</div>
+                    <div class="tile" data-number="18">- S -</div>
+                    <div class="tile" data-number="8">- I -</div>
+                    <div class="tile" data-number="20">- U -</div>
+                    <div class="tile" data-number="10">- K -</div>
+                    <div class="tile" data-number="14">- O -</div>
+                    <div class="tile" data-number="16">- Q -</div>
+                    <div class="tile" data-number="21">- V -</div>
+                    <div class="tile" data-number="25">- Z -</div>    
+                    <div class="tile" data-number="22">- W -</div>
+                    <div class="tile" data-number="24">- Y -</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="select-btn">
+                <input type="radio" name="select-wheel" >
+                <input type="hidden" name="order" value="0">
+            </div>
+            <div class="wheel">
+                <div class="tiles">
+                    <div class="tile" data-number="6">- G -</div>
+                    <div class="tile" data-number="1">- B -</div>
+                    <div class="tile" data-number="2">- C -</div>
+                    <div class="tile" data-number="4">- E -</div>
+                    <div class="tile" data-number="3">- D -</div>
+                    <div class="tile" data-number="9">- J -</div>
+                    <div class="tile" data-number="12">- M -</div>
+                    <div class="tile" data-number="17">- R -</div>
+                    <div class="tile" data-number="0">- A -</div>
+                    <div class="tile" data-number="11">- L -</div>
+                    <div class="tile" data-number="15">- P -</div>
+                    <div class="tile" data-number="7">- H -</div>
+                    <div class="tile" data-number="13">- N -</div>
+                    <div class="tile" data-number="19">- T -</div>
+                    <div class="tile" data-number="5">- F -</div>
+                    <div class="tile" data-number="23">- X -</div>
+                    <div class="tile" data-number="18">- S -</div>
+                    <div class="tile" data-number="8">- I -</div>
+                    <div class="tile" data-number="20">- U -</div>
+                    <div class="tile" data-number="10">- K -</div>
+                    <div class="tile" data-number="14">- O -</div>
+                    <div class="tile" data-number="16">- Q -</div>
+                    <div class="tile" data-number="21">- V -</div>
+                    <div class="tile" data-number="25">- Z -</div>    
+                    <div class="tile" data-number="22">- W -</div>
+                    <div class="tile" data-number="24">- Y -</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="select-btn">
+                <input type="radio" name="select-wheel" >
+                <input type="hidden" name="order" value="0">
+            </div>
+            <div class="wheel">
+                <div class="tiles">
+                    <div class="tile" data-number="6">- G -</div>
+                    <div class="tile" data-number="1">- B -</div>
+                    <div class="tile" data-number="2">- C -</div>
+                    <div class="tile" data-number="4">- E -</div>
+                    <div class="tile" data-number="3">- D -</div>
+                    <div class="tile" data-number="9">- J -</div>
+                    <div class="tile" data-number="12">- M -</div>
+                    <div class="tile" data-number="17">- R -</div>
+                    <div class="tile" data-number="0">- A -</div>
+                    <div class="tile" data-number="11">- L -</div>
+                    <div class="tile" data-number="15">- P -</div>
+                    <div class="tile" data-number="7">- H -</div>
+                    <div class="tile" data-number="13">- N -</div>
+                    <div class="tile" data-number="19">- T -</div>
+                    <div class="tile" data-number="5">- F -</div>
+                    <div class="tile" data-number="23">- X -</div>
+                    <div class="tile" data-number="18">- S -</div>
+                    <div class="tile" data-number="8">- I -</div>
+                    <div class="tile" data-number="20">- U -</div>
+                    <div class="tile" data-number="10">- K -</div>
+                    <div class="tile" data-number="14">- O -</div>
+                    <div class="tile" data-number="16">- Q -</div>
+                    <div class="tile" data-number="21">- V -</div>
+                    <div class="tile" data-number="25">- Z -</div>    
+                    <div class="tile" data-number="22">- W -</div>
+                    <div class="tile" data-number="24">- Y -</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="select-btn">
+                <input type="radio" name="select-wheel" >
+                <input type="hidden" name="order" value="0">
+            </div>
+            <div class="wheel">
+                <div class="tiles">
+                    <div class="tile" data-number="6">- G -</div>
+                    <div class="tile" data-number="1">- B -</div>
+                    <div class="tile" data-number="2">- C -</div>
+                    <div class="tile" data-number="4">- E -</div>
+                    <div class="tile" data-number="3">- D -</div>
+                    <div class="tile" data-number="9">- J -</div>
+                    <div class="tile" data-number="12">- M -</div>
+                    <div class="tile" data-number="17">- R -</div>
+                    <div class="tile" data-number="0">- A -</div>
+                    <div class="tile" data-number="11">- L -</div>
+                    <div class="tile" data-number="15">- P -</div>
+                    <div class="tile" data-number="7">- H -</div>
+                    <div class="tile" data-number="13">- N -</div>
+                    <div class="tile" data-number="19">- T -</div>
+                    <div class="tile" data-number="5">- F -</div>
+                    <div class="tile" data-number="23">- X -</div>
+                    <div class="tile" data-number="18">- S -</div>
+                    <div class="tile" data-number="8">- I -</div>
+                    <div class="tile" data-number="20">- U -</div>
+                    <div class="tile" data-number="10">- K -</div>
+                    <div class="tile" data-number="14">- O -</div>
+                    <div class="tile" data-number="16">- Q -</div>
+                    <div class="tile" data-number="21">- V -</div>
+                    <div class="tile" data-number="25">- Z -</div>    
+                    <div class="tile" data-number="22">- W -</div>
+                    <div class="tile" data-number="24">- Y -</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="select-btn">
+                <input type="radio" name="select-wheel" >
+                <input type="hidden" name="order" value="0">
+            </div>
+            <div class="wheel">
+                <div class="tiles">
+                    <div class="tile" data-number="6">- G -</div>
+                    <div class="tile" data-number="1">- B -</div>
+                    <div class="tile" data-number="2">- C -</div>
+                    <div class="tile" data-number="4">- E -</div>
+                    <div class="tile" data-number="3">- D -</div>
+                    <div class="tile" data-number="9">- J -</div>
+                    <div class="tile" data-number="12">- M -</div>
+                    <div class="tile" data-number="17">- R -</div>
+                    <div class="tile" data-number="0">- A -</div>
+                    <div class="tile" data-number="11">- L -</div>
+                    <div class="tile" data-number="15">- P -</div>
+                    <div class="tile" data-number="7">- H -</div>
+                    <div class="tile" data-number="13">- N -</div>
+                    <div class="tile" data-number="19">- T -</div>
+                    <div class="tile" data-number="5">- F -</div>
+                    <div class="tile" data-number="23">- X -</div>
+                    <div class="tile" data-number="18">- S -</div>
+                    <div class="tile" data-number="8">- I -</div>
+                    <div class="tile" data-number="20">- U -</div>
+                    <div class="tile" data-number="10">- K -</div>
+                    <div class="tile" data-number="14">- O -</div>
+                    <div class="tile" data-number="16">- Q -</div>
+                    <div class="tile" data-number="21">- V -</div>
+                    <div class="tile" data-number="25">- Z -</div>    
+                    <div class="tile" data-number="22">- W -</div>
+                    <div class="tile" data-number="24">- Y -</div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="select-btn">
+                <input type="radio" name="select-wheel" >
+                <input type="hidden" name="order" value="0">
+            </div>
+            <div class="wheel">
+                <div class="tiles">
+                    <div class="tile" data-number="6">- G -</div>
+                    <div class="tile" data-number="1">- B -</div>
+                    <div class="tile" data-number="2">- C -</div>
+                    <div class="tile" data-number="4">- E -</div>
+                    <div class="tile" data-number="3">- D -</div>
+                    <div class="tile" data-number="9">- J -</div>
+                    <div class="tile" data-number="12">- M -</div>
+                    <div class="tile" data-number="17">- R -</div>
+                    <div class="tile" data-number="0">- A -</div>
+                    <div class="tile" data-number="11">- L -</div>
+                    <div class="tile" data-number="15">- P -</div>
+                    <div class="tile" data-number="7">- H -</div>
+                    <div class="tile" data-number="13">- N -</div>
+                    <div class="tile" data-number="19">- T -</div>
+                    <div class="tile" data-number="5">- F -</div>
+                    <div class="tile" data-number="23">- X -</div>
+                    <div class="tile" data-number="18">- S -</div>
+                    <div class="tile" data-number="8">- I -</div>
+                    <div class="tile" data-number="20">- U -</div>
+                    <div class="tile" data-number="10">- K -</div>
+                    <div class="tile" data-number="14">- O -</div>
+                    <div class="tile" data-number="16">- Q -</div>
+                    <div class="tile" data-number="21">- V -</div>
+                    <div class="tile" data-number="25">- Z -</div>    
+                    <div class="tile" data-number="22">- W -</div>
+                    <div class="tile" data-number="24">- Y -</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="extract-btn">Extract The Cipher Text</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/icheck.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/shuffle.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

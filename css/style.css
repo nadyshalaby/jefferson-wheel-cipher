@@ -1,0 +1,87 @@
+
+*{
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+body{
+  margin : 100px auto;
+}
+.header{
+  padding: 10px;
+}
+.wrapper{
+  width: 50px;
+  display: inline-block;
+  margin-left: 20px;
+}
+.sweet-alert {
+    box-sizing : border-box;
+    max-height : 100% !important;
+    overflow-y : auto !important;
+    padding : 0 17px 17px !important;
+    width : 512px;
+
+    //As default top and left are 50%, so it will transform those values and will set the modal exactly in the middle
+    transform: translate(-50%, -50%);
+
+   //remove margins
+   margin: 0;
+}
+.arrow{
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 5px;
+  margin: 5px auto;
+  line-height: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #333;
+}
+.extract-btn{
+width: 250px;
+  height: 50px;
+    font-size: 20px;
+  font-weight: bolder;
+  border-radius: 5px;
+  margin: 100px auto;
+  line-height: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #333;
+}
+.arrow:hover , .extract-btn:hover{
+background: #d3d3d3;
+}
+.arrow:active , .extract-btn:active{
+box-shadow: 0 0 1px #333;
+}
+.select-btn{
+  padding: 5px;
+}
+.wheel{
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+.tiles{
+  width: 50px;
+  height: 1300px;
+  background: #c3b7b7;
+}
+.tiles .tile{
+  color: #653982;
+  width: 50px;
+  line-height: 50px;
+  height: 50px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background: #FFF;
+}
